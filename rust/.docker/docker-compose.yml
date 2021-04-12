@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  rust:
+    image: rust:1.51
+    container_name: rust-code-katas
+    volumes:
+      - ../:/code-katas/rust
+    stdin_open: true
+    tty: true
+volumes:
+  codekatas: {}
